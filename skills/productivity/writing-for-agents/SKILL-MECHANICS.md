@@ -20,3 +20,9 @@ The invocation cut of splitting (the sequence cut lives in `SKILL.md`): split of
 ## Router skills
 
 When user-invoked skills multiply past what you can remember, that piled-up cognitive load is cured by a **router skill**: one user-invoked skill that names the others and when to reach for each, so the human has one skill to remember instead of many. It can only hint, never fire them: user-invoked skills have no description, so nothing but the human can reach them.
+
+## Skill size and progressive disclosure
+
+A skill's `SKILL.md` is loaded into context whenever the skill is triggered. Keep `SKILL.md` strictly to the execution spine: mode detection, phase orchestration, gate decisions, output handoffs. Everything else (checklists, deep background theory, templates, and multi-page scoring rubrics) belongs in `references/` or `resources/`, loaded on demand via context pointers. Keep `SKILL.md` lean (under ~200-300 lines) so the model's attention is focused squarely on execution.
+
+
